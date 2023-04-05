@@ -1,13 +1,13 @@
 import React from 'react'
 import BlogPost from '../../components/BlogPost'
-/* import { fetchBlogT1, fetchBlogT1s } from '../../http/UrlAddress'; 
- import axios from 'axios'; */
+import { fetchBlogT1, fetchBlogT1s } from '../../http/UrlAddress';
+import axios from 'axios';
 
-function slug() {
-  
+function slug({ post, posts }) {
+
   return (
     <>
-        <BlogPost />
+      <BlogPost post={post} posts={posts} />
     </>
   )
 }
@@ -15,9 +15,9 @@ function slug() {
 
 export default slug
 
-/* export async function getStaticPaths() {
+export async function getStaticPaths() {
   const posts = await fetchBlogT1s();
-  
+
   return {
     paths: posts.data.data.map((post) => {
       return {
@@ -28,10 +28,10 @@ export default slug
     }),
     fallback: false
   };
-} */
+}
 
 
-/* export async function getStaticProps({ params }) {
+export async function getStaticProps({ params }) {
   const postRes = await fetchBlogT1(params.slug);
   const blogT1s = await fetchBlogT1s();
 
@@ -41,7 +41,7 @@ export default slug
       posts: blogT1s.data
     },
   };
-} */
+}
 
 
 

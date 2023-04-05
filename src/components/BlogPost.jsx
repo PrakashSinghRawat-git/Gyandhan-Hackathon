@@ -1,45 +1,50 @@
 import React from "react";
 import Image from "next/image";
-/* import MarkdownIt from "markdown-it"; */
+import MarkdownIt from "markdown-it";
 
-function BlogPost() {
+function BlogPost({ post, posts }) {
     // console.log(posts.data, post);
-    const genre = "dev";
-    const thumbnail = "https://picsum.photos/200";
-    const authorImage = "https://picsum.photos/200";
-    /* const authorImage = `http://localhost:1337${authorImagePath}`; */
-    const authorName = "Dilshad";
-    const heading = "let's talk about money";
-    const content =
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, assumenda? Voluptatibus corporis commodi, minima repudiandae accusamus unde nostrum nesciunt fuga, saepe iusto voluptate quaerat at repellat provident sapiente? Dolor saepe ratione ipsam perspiciatis culpa vero quis, amet facilis cupiditate tenetur excepturi ducimus itaque quos, corrupti qui iusto, esse similique. Ratione voluptas sed esse recusandae mollitia reprehenderit deserunt alias pariatur dolorem provident quia corrupti tenetur laborum, a magni necessitatibus nemo amet fuga, eos debitis animi accusamus odio. Tenetur non fuga nesciunt eaque minus vitae quidem, perferendis amet quasi iusto nihil officia voluptatibus perspiciatis reiciendis architecto suscipit magni quia hic ad? Nostrum impedit fugit modi ad expedita quidem, qui accusantium illum enim recusandae quaerat doloribus facere, harum aperiam non laborum dolorem quas. Dignissimos dicta soluta voluptate amet aperiam commodi velit ratione hic debitis, ipsa odio fugiat necessitatibus enim reiciendis beatae quas aliquam ab. Autem facere molestiae laboriosam molestias, nesciunt voluptatibus, natus neque doloremque nam non tenetur quae modi tempore debitis, cumque iste accusamus adipisci amet tempora recusandae! Fugiat exercitationem error autem animi, ducimus odio consequatur perspiciatis aliquam numquam temporibus. Cum ducimus cupiditate, ea, molestias, aut sint recusandae quam nisi corrupti necessitatibus velit modi! Facilis molestiae totam explicabo quibusdam. Architecto explicabo aut voluptates, neque placeat ipsa totam sed eius temporibus similique minima, magnam deleniti quasi? Suscipit possimus incidunt distinctio sed, delectus voluptatibus voluptates dignissimos, assumenda doloribus voluptas maiores molestias soluta laudantium. Aperiam tempora magnam deleniti? Perspiciatis cum, voluptatem fugiat dolorum est ad quos nesciunt non. Neque tempore consectetur cumque recusandae! Adipisci, blanditiis natus. Itaque praesentium exercitationem, similique at saepe, blanditiis quasi numquam quo et placeat sunt dolores ab impedit accusantium quis aliquam. Debitis harum incidunt dolores ducimus expedita non ex ut inventore distinctio illo tempora iusto cumque deleniti, ipsum quia! Et quia fugiat deserunt. Expedita debitis commodi perspiciatis consequuntur impedit numquam, amet iure enim qui, eligendi perferendis ratione. Sunt distinctio obcaecati totam quisquam provident excepturi nesciunt id nostrum expedita ad maiores saepe ex nisi architecto voluptatem deleniti maxime quod natus ducimus molestias, perspiciatis incidunt. Blanditiis ipsam nulla eos minima officia expedita nisi? Earum maxime fugit cupiditate! Temporibus delectus eum reiciendis, sequi, tempore odio repudiandae quod nobis, facilis illum ex aliquam alias sed ipsa nemo voluptate quis modi eius veniam provident? Unde, vel debitis suscipit dolor consequuntur tempore asperiores consectetur sit magni totam eos hic deleniti est quod necessitatibus, possimus perspiciatis rem voluptas ut quaerat? Iste eius consequuntur rerum. Repudiandae, quisquam. Unde, debitis doloribus deserunt dolor at neque ratione aut minus autem, amet ut natus adipisci tempore recusandae accusantium quaerat eius quo dicta, beatae exercitationem optio error. Temporibus placeat, nemo exercitationem facilis, rem, qui doloribus mollitia quam corrupti quibusdam neque? Culpa, tempore possimus? Repellat nostrum similique natus itaque doloribus et rerum aliquam dignissimos magnam porro perferendis labore obcaecati, iusto earum, facere sapiente, perspiciatis illum. Laborum quasi dolores iure illum laudantium, placeat dicta, in quis fugiat tempora beatae consequuntur numquam quas eos animi earum doloremque error officia libero maiores dignissimos! Vitae quasi voluptatibus repudiandae alias ratione doloremque quaerat inventore praesentium, ab quidem officia iure voluptates";
-    /* const slug = post.data[0].attributes.slug.toString(); */
+    const genre = post.data[0].attributes.genre;
+    const thumbnailPath = post.data[0].attributes.thmbnail.data.attributes.url;
+    const thumbnail = `http://localhost:1337${thumbnailPath}`;
+    const authorImagePath = post.data[0].attributes.authorImage.data[0].attributes.url;
+    const authorImage = `http://localhost:1337${authorImagePath}`;
+    const authorName = post.data[0].attributes.authorName;
+    const heading = post.data[0].attributes.heading;
+    const content = post.data[0].attributes.content;
+    const slug = post.data[0].attributes.slug.toString();
 
-    /*  const md = new MarkdownIt();
+    const md = new MarkdownIt();
     const htmlContent = md.render(content);
+
+
 
     const currentPostId = parseInt(post.data[0].id);
 
-    const postDataArray = []; */
+    const postDataArray = [];
 
-    /* for (var i = 1; i <= posts.data.length; i++) {
+    for (var i = 1; i <= posts.data.length; i++) {
         if (i === currentPostId) {
             continue;
         }
         postDataArray.push(posts.data[i]);
-    } */
+    }
 
     // console.log(postDataArray);
 
-    const remainPost1 = "https://picsum.photos/200";
-    const remainPost2 = "https://picsum.photos/200";
-    const remainPost3 = "https://picsum.photos/200";
-    const remainPost4 = "https://picsum.photos/200";
-    const remainPost5 = "https://picsum.photos/200";
-    const remainPost6 = "https://picsum.photos/200";
-    const remainPost7 = "https://picsum.photos/200";
-    const remainPost8 = "https://picsum.photos/200";
-    const remainPost9 = "https://picsum.photos/200";
-    const remainPost10 = "https://picsum.photos/200";
+
+
+    const remainPost1 = `http://localhost:1337${authorImagePath}`;
+    const remainPost2 = `http://localhost:1337${authorImagePath}`;
+    const remainPost3 = `http://localhost:1337${authorImagePath}`;
+    const remainPost4 = `http://localhost:1337${authorImagePath}`;
+    const remainPost5 = `http://localhost:1337${authorImagePath}`;
+    const remainPost6 = `http://localhost:1337${authorImagePath}`;
+    const remainPost7 = `http://localhost:1337${authorImagePath}`;
+    const remainPost8 = `http://localhost:1337${authorImagePath}`;
+    const remainPost9 = `http://localhost:1337${authorImagePath}`;
+    const remainPost10 = `http://localhost:1337${authorImagePath}`;
+
 
     return (
         <div className="font-poppins text-gray-600">
@@ -165,17 +170,14 @@ function BlogPost() {
                             <div class="space-y-4">
                                 <a href="#" class="flex group">
                                     <div class="flex-shrink-0">
-                                        <Image
+                                        <img
                                             src={remainPost1}
                                             class="h-14 w-20 rounded object-cover"
-                                            height={56}
-                                            width={80}
                                         />
                                     </div>
                                     <div class="flex-grow pl-3">
                                         <h5 class="text-md leading-5 block font-roboto font-semibold  transition group-hover:text-blue-500">
-                                            Team Bitbose geared up to attend
-                                            Blockchain
+                                            Team Bitbose geared up to attend Blockchain
                                         </h5>
                                         <div class="flex text-gray-400 text-sm items-center">
                                             <span class="mr-1 text-xs">
@@ -187,17 +189,14 @@ function BlogPost() {
                                 </a>
                                 <a class="flex group">
                                     <div class="flex-shrink-0">
-                                        <Image
+                                        <img
                                             src={remainPost2}
                                             class="h-14 w-20 rounded object-cover"
-                                            width={80}
-                                            height={56}
                                         />
                                     </div>
                                     <div class="flex-grow pl-3">
                                         <h5 class="text-md leading-5 block font-roboto font-semibold  transition group-hover:text-blue-500">
-                                            After a Caribbean Hurricane, the
-                                            Battle
+                                            After a Caribbean Hurricane, the Battle
                                         </h5>
                                         <div class="flex text-gray-400 text-sm items-center">
                                             <span class="mr-1 text-xs">
@@ -209,17 +208,14 @@ function BlogPost() {
                                 </a>
                                 <a href="#" class="flex group">
                                     <div class="flex-shrink-0">
-                                        <Image
+                                        <img
                                             src={remainPost3}
                                             class="h-14 w-20 rounded object-cover"
-                                            width={80}
-                                            height={56}
                                         />
                                     </div>
                                     <div class="flex-grow pl-3">
                                         <h5 class="text-md leading-5 block font-roboto font-semibold  transition group-hover:text-blue-500">
-                                            California sheriff’s deputy shot
-                                            during ‘ambush’
+                                            California sheriff’s deputy shot during ‘ambush’
                                         </h5>
                                         <div class="flex text-gray-400 text-sm items-center">
                                             <span class="mr-1 text-xs">
@@ -247,15 +243,10 @@ function BlogPost() {
 
                         {/* <!-- big post --> */}
                         <div class="rounded-sm overflow-hidden bg-white shadow-sm">
-                            <a
-                                href="view.html"
-                                class="block rounded-md overflow-hidden"
-                            >
-                                <Image
+                            <a href="view.html" class="block rounded-md overflow-hidden">
+                                <img
                                     src={thumbnail}
                                     class="w-full h-96 object-cover transform hover:scale-110 transition duration-500"
-                                    width={100}
-                                    height={384}
                                 />
                             </a>
                             <div class="p-4 pb-5">
@@ -265,13 +256,10 @@ function BlogPost() {
                                     </h2>
                                 </a>
 
-                                {/* <section
+                                <section
                                     className="text-gray-500 text-sm mt-2"
-                                    dangerouslySetInnerHTML={{
-                                        __html: htmlContent,
-                                    }}
-                                ></section> */}
-                                <p>{content}</p>
+                                    dangerouslySetInnerHTML={{ __html: htmlContent }}
+                                ></section>
 
                                 <div class="mt-3 flex space-x-4">
                                     <div class="flex text-gray-400 text-sm items-center">
@@ -293,22 +281,16 @@ function BlogPost() {
                         {/* <!-- regular post --> */}
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
                             <div class="rounded-sm bg-white p-4 pb-5 shadow-sm">
-                                <a
-                                    href="#"
-                                    class="block rounded-md overflow-hidden"
-                                >
-                                    <Image
+                                <a href="#" class="block rounded-md overflow-hidden">
+                                    <img
                                         src={remainPost4}
                                         class="w-full h-60 object-cover transform hover:scale-110 transition duration-500"
-                                        width={100}
-                                        height={240}
                                     />
                                 </a>
                                 <div class="mt-3">
                                     <a href="#">
                                         <h2 class="block text-xl font-semibold text-gray-700 hover:text-blue-500 transition font-roboto">
-                                            Lorem, ipsum dolor sit amet consec
-                                            tetur adipisicing elit.
+                                            Lorem, ipsum dolor sit amet consec tetur adipisicing elit.
                                         </h2>
                                     </a>
                                     <div class="mt-2 flex space-x-3">
@@ -328,22 +310,16 @@ function BlogPost() {
                                 </div>
                             </div>
                             <div class="rounded-sm bg-white p-4 pb-5 shadow-sm">
-                                <a
-                                    href="#"
-                                    class="block rounded-md overflow-hidden"
-                                >
-                                    <Image
+                                <a href="#" class="block rounded-md overflow-hidden">
+                                    <img
                                         src={remainPost5}
                                         class="w-full h-60 object-cover transform hover:scale-110 transition duration-500"
-                                        width={100}
-                                        height={240}
                                     />
                                 </a>
                                 <div class="mt-3">
                                     <a href="#">
                                         <h2 class="block text-xl font-semibold text-gray-700 hover:text-blue-500 transition font-roboto">
-                                            Lorem, ipsum dolor sit amet consec
-                                            tetur adipisicing elit.
+                                            Lorem, ipsum dolor sit amet consec tetur adipisicing elit.
                                         </h2>
                                     </a>
                                     <div class="mt-2 flex space-x-3">
@@ -363,22 +339,16 @@ function BlogPost() {
                                 </div>
                             </div>
                             <div class="rounded-sm bg-white p-4 pb-5 shadow-sm">
-                                <a
-                                    href="#"
-                                    class="block rounded-md overflow-hidden"
-                                >
-                                    <Image
+                                <a href="#" class="block rounded-md overflow-hidden">
+                                    <img
                                         src={remainPost6}
                                         class="w-full h-60 object-cover transform hover:scale-110 transition duration-500"
-                                        width={100}
-                                        height={240}
                                     />
                                 </a>
                                 <div class="mt-3">
                                     <a href="#">
                                         <h2 class="block text-xl font-semibold text-gray-700 hover:text-blue-500 transition font-roboto">
-                                            Lorem, ipsum dolor sit amet consec
-                                            tetur adipisicing elit.
+                                            Lorem, ipsum dolor sit amet consec tetur adipisicing elit.
                                         </h2>
                                     </a>
                                     <div class="mt-2 flex space-x-3">
@@ -398,22 +368,16 @@ function BlogPost() {
                                 </div>
                             </div>
                             <div class="rounded-sm bg-white p-4 pb-5 shadow-sm">
-                                <a
-                                    href="#"
-                                    class="block rounded-md overflow-hidden"
-                                >
-                                    <Image
+                                <a href="#" class="block rounded-md overflow-hidden">
+                                    <img
                                         src={remainPost7}
                                         class="w-full h-60 object-cover transform hover:scale-110 transition duration-500"
-                                        width={100}
-                                        height={240}
                                     />
                                 </a>
                                 <div class="mt-3">
                                     <a href="#">
                                         <h2 class="block text-xl font-semibold text-gray-700 hover:text-blue-500 transition font-roboto">
-                                            Lorem, ipsum dolor sit amet consec
-                                            tetur adipisicing elit.
+                                            Lorem, ipsum dolor sit amet consec tetur adipisicing elit.
                                         </h2>
                                     </a>
                                     <div class="mt-2 flex space-x-3">
@@ -484,17 +448,14 @@ function BlogPost() {
                             <div class="space-y-4">
                                 <a href="#" class="flex group">
                                     <div class="flex-shrink-0">
-                                        <Image
+                                        <img
                                             src={remainPost8}
                                             class="h-14 w-20 lg:w-14 xl:w-20 rounded object-cover"
-                                            height={56}
-                                            width={80}
                                         />
                                     </div>
                                     <div class="flex-grow pl-3">
                                         <h5 class="text-md leading-5 block font-roboto font-semibold  transition group-hover:text-blue-500">
-                                            Team Bitbose geared up to attend
-                                            Blockchain
+                                            Team Bitbose geared up to attend Blockchain
                                         </h5>
                                         <div class="flex text-gray-400 text-sm items-center">
                                             <span class="mr-1 text-xs">
@@ -506,17 +467,14 @@ function BlogPost() {
                                 </a>
                                 <a href="#" class="flex group">
                                     <div class="flex-shrink-0">
-                                        <Image
+                                        <img
                                             src={remainPost9}
                                             class="h-14 w-20 lg:w-14 xl:w-20 rounded object-cover"
-                                            height={56}
-                                            width={80}
                                         />
                                     </div>
                                     <div class="flex-grow pl-3">
                                         <h5 class="text-md leading-5 block font-roboto font-semibold  transition group-hover:text-blue-500">
-                                            After a Caribbean Hurricane, the
-                                            Battle
+                                            After a Caribbean Hurricane, the Battle
                                         </h5>
                                         <div class="flex text-gray-400 text-sm items-center">
                                             <span class="mr-1 text-xs">
@@ -528,17 +486,14 @@ function BlogPost() {
                                 </a>
                                 <a href="#" class="flex group">
                                     <div class="flex-shrink-0">
-                                        <Image
+                                        <img
                                             src={remainPost10}
                                             class="h-14 w-20 lg:w-14 xl:w-20 rounded object-cover"
-                                            height={56}
-                                            width={80}
                                         />
                                     </div>
                                     <div class="flex-grow pl-3">
                                         <h5 class="text-md leading-5 block font-roboto font-semibold  transition group-hover:text-blue-500">
-                                            California sheriff’s deputy shot
-                                            during ‘ambush’
+                                            California sheriff’s deputy shot during ‘ambush’
                                         </h5>
                                         <div class="flex text-gray-400 text-sm items-center">
                                             <span class="mr-1 text-xs">
