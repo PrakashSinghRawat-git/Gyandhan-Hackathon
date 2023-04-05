@@ -22,7 +22,7 @@ function Card2() {
             </h1>
             <p className="leading-relaxed mb-3">
               Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
-              microdosing tousled waistcoat.
+              microdosing tousled waistcoat
             </p>
             <div className="flex items-center flex-wrap text-primary-500">
               <span className="w-fit">

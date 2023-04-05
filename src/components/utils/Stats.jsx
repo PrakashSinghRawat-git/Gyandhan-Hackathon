@@ -27,7 +27,7 @@ export default function Stats () {
         </div>
         <div className="lg:w-1/2">
           <p>
-          Money is a social construct. It only has value because we have all agreed to give it value. It's a tool we use to exchange goods and services, but it's not the only tool. There are many other ways to create value, and many other forms of currency, such as time, attention, and relationships.
+          Money is a social construct. It only has value because we have all agreed to give it value. It&apos;s a tool we use to exchange goods and services, but it&apos;s not the only tool. There are many other ways to create value, and many other forms of currency, such as time, attention, and relationships.
           </p>
         </div>
       </div>

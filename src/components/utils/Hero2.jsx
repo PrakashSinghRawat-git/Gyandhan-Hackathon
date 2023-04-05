@@ -16,7 +16,7 @@ const Hero2 = () => {
                 Money follows passion and purpose.
               </h2>
               <p className="text-base text-gray-700 md:text-lg">
-                Money can't buy happiness, but it's a lot easier to cry in a
+                Money can&apos;t buy happiness, but it&apos;s a lot easier to cry in a
                 Mercedes than on a bicycle.
               </p>
             </div>
@@ -40,6 +40,9 @@ const Hero2 = () => {
           <Image
             className="object-cover object-top w-full h-64 max-w-xl -mb-16 rounded shadow-2xl lg:ml-64 xl:ml-8 lg:-mb-24 xl:-mb-28 lg:h-auto lg:max-w-screen-md"
             src="https://kitwind.io/assets/kometa/full-browser.png"
+            alt=""
+            width={100}
+            height={100}
           />
         </div>
       </div>
