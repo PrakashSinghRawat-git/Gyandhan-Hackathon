@@ -2,17 +2,15 @@ import Link from "next/link";
 import React from "react";
 
 
-function Card1({post}) {
-  const genre = post.attributes.genre
-  const thumbnailPath = post.attributes.thmbnail.data.attributes.url
-  const thumbnail = `http://localhost:1337${thumbnailPath}`
-  const authorImagePath = post.attributes.authorImage.data.attributes.url
-  const authorImage = `http://localhost:1337${authorImagePath}`
-  const authorName = post.attributes.authorName
-  const heading = post.attributes.heading
-  const slug = post.attributes.slug.toString()
+function Card1() {
+  const genre = "deveolpment"
+  const thumbnail = "https://picsum.photos/200/300"
+  const authorImage= "https://picsum.photos/id/237/200/300"
+  const authorName = "Dilshad"
+  const heading = "let's talk about money"
+ /*  const slug = post.attributes.slug.toString() */
   
-  console.log(slug)
+  /* console.log(slug) */
   
 
   return (
@@ -27,7 +25,7 @@ function Card1({post}) {
             <span className="bg-primary-500 text-white tracking-wide text-sm uppercase px-2 py-1 rounded-md">
               {genre}
             </span>
-            <div className="left-3 bottom-3 right-3 bg-white p-4 mt-3 rounded-global dark:bg-black">
+            <div className="left-3 bottom-3 right-3 bg-white p-4 mt-3 rounded-global dark:bg-white">
               <div className="flex items-center">
                 <img
                   className="w-10 h-10 rounded-full mr-3"
@@ -35,10 +33,10 @@ function Card1({post}) {
                 />
                 <p className="uppercase text-sm">{authorName}</p>
               </div>
-              <h1 className="text-xl font-semibold text-black mb-4 mt-2 dark:text-white 2xl:text-2xl">
+              <h1 className="text-xl font-semibold text-black mb-4 mt-22xl:text-2xl">
                 {heading}
               </h1>
-              <Link className="flex items-center gap-x-1.5"  href={`/blogs/${slug}`}>
+              <Link className="flex items-center gap-x-1.5"  href={`/blogs/slug`}>
                 Read more
                 <span>
                   <div
