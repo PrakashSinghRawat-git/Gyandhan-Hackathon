@@ -1,13 +1,16 @@
 import React from "react";
+import Image from 'next/image'
 
 function Card4() {
   return (
     <>
       <div>
         <div className="relative pb-56 mb-4 rounded-global shadow lg:pb-64">
-          <img
+          <Image
             className="absolute object-cover w-full h-full rounded-global bg-blue-100 object-center"
-            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZmFjZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+            src="https://picsum.photos/id/237/200/300"
+            width={100}
+            height={100}
           />
         </div>
         <div className="flex flex-col sm:text-center">

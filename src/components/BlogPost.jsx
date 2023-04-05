@@ -4,9 +4,9 @@ import Image from "next/image";
 
 function BlogPost() {
     // console.log(posts.data, post);
-    const genre = "dwv";
+    const genre = "dev";
     const thumbnail = "https://picsum.photos/200";
-    const authorImagePath = "https://picsum.photos/200";
+    const authorImage = "https://picsum.photos/200";
     /* const authorImage = `http://localhost:1337${authorImagePath}`; */
     const authorName = "Dilshad";
     const heading = "let's talk about money";
@@ -165,9 +165,11 @@ function BlogPost() {
                             <div class="space-y-4">
                                 <a href="#" class="flex group">
                                     <div class="flex-shrink-0">
-                                        <img
+                                        <Image
                                             src={remainPost1}
                                             class="h-14 w-20 rounded object-cover"
+                                            height={56}
+                                            width={80}
                                         />
                                     </div>
                                     <div class="flex-grow pl-3">
@@ -185,9 +187,11 @@ function BlogPost() {
                                 </a>
                                 <a class="flex group">
                                     <div class="flex-shrink-0">
-                                        <img
+                                        <Image
                                             src={remainPost2}
                                             class="h-14 w-20 rounded object-cover"
+                                            width={80}
+                                            height={56}
                                         />
                                     </div>
                                     <div class="flex-grow pl-3">
@@ -205,9 +209,11 @@ function BlogPost() {
                                 </a>
                                 <a href="#" class="flex group">
                                     <div class="flex-shrink-0">
-                                        <img
+                                        <Image
                                             src={remainPost3}
                                             class="h-14 w-20 rounded object-cover"
+                                            width={80}
+                                            height={56}
                                         />
                                     </div>
                                     <div class="flex-grow pl-3">
@@ -245,9 +251,11 @@ function BlogPost() {
                                 href="view.html"
                                 class="block rounded-md overflow-hidden"
                             >
-                                <img
+                                <Image
                                     src={thumbnail}
                                     class="w-full h-96 object-cover transform hover:scale-110 transition duration-500"
+                                    width={100}
+                                    height={384}
                                 />
                             </a>
                             <div class="p-4 pb-5">
@@ -289,9 +297,11 @@ function BlogPost() {
                                     href="#"
                                     class="block rounded-md overflow-hidden"
                                 >
-                                    <img
+                                    <Image
                                         src={remainPost4}
                                         class="w-full h-60 object-cover transform hover:scale-110 transition duration-500"
+                                        width={100}
+                                        height={240}
                                     />
                                 </a>
                                 <div class="mt-3">
@@ -322,9 +332,11 @@ function BlogPost() {
                                     href="#"
                                     class="block rounded-md overflow-hidden"
                                 >
-                                    <img
+                                    <Image
                                         src={remainPost5}
                                         class="w-full h-60 object-cover transform hover:scale-110 transition duration-500"
+                                        width={100}
+                                        height={240}
                                     />
                                 </a>
                                 <div class="mt-3">
@@ -355,9 +367,11 @@ function BlogPost() {
                                     href="#"
                                     class="block rounded-md overflow-hidden"
                                 >
-                                    <img
+                                    <Image
                                         src={remainPost6}
                                         class="w-full h-60 object-cover transform hover:scale-110 transition duration-500"
+                                        width={100}
+                                        height={240}
                                     />
                                 </a>
                                 <div class="mt-3">
@@ -388,9 +402,11 @@ function BlogPost() {
                                     href="#"
                                     class="block rounded-md overflow-hidden"
                                 >
-                                    <img
+                                    <Image
                                         src={remainPost7}
                                         class="w-full h-60 object-cover transform hover:scale-110 transition duration-500"
+                                        width={100}
+                                        height={240}
                                     />
                                 </a>
                                 <div class="mt-3">
@@ -468,9 +484,11 @@ function BlogPost() {
                             <div class="space-y-4">
                                 <a href="#" class="flex group">
                                     <div class="flex-shrink-0">
-                                        <img
+                                        <Image
                                             src={remainPost8}
                                             class="h-14 w-20 lg:w-14 xl:w-20 rounded object-cover"
+                                            height={56}
+                                            width={80}
                                         />
                                     </div>
                                     <div class="flex-grow pl-3">
@@ -488,9 +506,11 @@ function BlogPost() {
                                 </a>
                                 <a href="#" class="flex group">
                                     <div class="flex-shrink-0">
-                                        <img
+                                        <Image
                                             src={remainPost9}
                                             class="h-14 w-20 lg:w-14 xl:w-20 rounded object-cover"
+                                            height={56}
+                                            width={80}
                                         />
                                     </div>
                                     <div class="flex-grow pl-3">
@@ -508,9 +528,11 @@ function BlogPost() {
                                 </a>
                                 <a href="#" class="flex group">
                                     <div class="flex-shrink-0">
-                                        <img
+                                        <Image
                                             src={remainPost10}
                                             class="h-14 w-20 lg:w-14 xl:w-20 rounded object-cover"
+                                            height={56}
+                                            width={80}
                                         />
                                     </div>
                                     <div class="flex-grow pl-3">

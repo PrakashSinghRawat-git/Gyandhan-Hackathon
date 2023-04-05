@@ -4,6 +4,7 @@ import Header from "../components/utils/Header";
 import Footer from "../components/utils/Footer";
 import  { AppProps } from "next/app";
 import { Menu } from "@headlessui/react";
+import Image from 'next/image'
 
 export default function App({ Component, pageProps }) {
   return (
@@ -14,7 +15,7 @@ export default function App({ Component, pageProps }) {
       <Menu as="div" className="fixed top-8 right-10">
           <Menu.Button className=" w-full justify-center rounded-md px-4 py-2 text-sm font-medium dark:text-white hover:bg-opacity-30 ">
             <span className="w-fit">
-              <img src="/menu.png" alt="nav icon" className="h-6 w-6" />
+              <Image src="/menu.png" alt="nav icon" className="h-6 w-6"  height={24} width={24}/>
             </span>
           </Menu.Button>
           <Menu.Items

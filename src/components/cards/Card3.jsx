@@ -1,13 +1,16 @@
 import Link from "next/link";
 import React from "react";
+import Image from 'next/image'
 
 function Card3() {
   return (
     <>
       <Link href="/blogs/all" className="grid sm:flex sm:items-center gap-y-3 gap-x-4">
-        <img
+        <Image
           className="rounded-lg w-20 h-20"
-          src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=900&h=900&q=80"
+          src="https://picsum.photos/id/237/200/300"
+          width={80}
+          height={80}
         />
         <div className="sm:flex sm:flex-col sm:h-full">
           <div>

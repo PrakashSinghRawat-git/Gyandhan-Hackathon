@@ -3,6 +3,7 @@ import Card2 from "@/components/cards/Card2";
 import Card3 from "@/components/cards/Card3";
 import Card4 from "@/components/cards/Card4";
 import ImageGallery from "@/components/cards/ImageGallery";
+import Image from 'next/image'
 
 export default function Home() {
     return (
@@ -13,6 +14,7 @@ export default function Home() {
                     <Card1 />
                     <Card1 />
                     <Card1 />
+                   
                 </div>
             </div>
 
@@ -22,7 +24,7 @@ export default function Home() {
                         Checkout Our Gallery
                     </h1>
                     <p className="mt-3 text-lg dark:text-gray-300 sm:max-w-lg sm:mx-auto text-center">
-                        "Time is more valuable than money. You can get more
+                        Time is more valuable than money. You can get more
                         money, but you cannot get more time.
                     </p>
                     <div className="flex flex-wrap -m-4 mt-4">
@@ -32,6 +34,7 @@ export default function Home() {
                         <Card2 />
                         <Card2 />
                         <Card2 />
+                     
                     </div>
                 </div>
             </section>
@@ -46,6 +49,8 @@ export default function Home() {
                     <Card3 />
                     <Card3 />
                     <Card3 />
+                
+                   
                 </div>
             </div>
 
@@ -55,6 +60,11 @@ export default function Home() {
                     <Card4 />
                     <Card4 />
                     <Card4 />
+                    <Card4 />
+                    <Card4 />
+                    <Card4 />
+                    <Card4 />
+                    
                 </div>
             </div>
         </>

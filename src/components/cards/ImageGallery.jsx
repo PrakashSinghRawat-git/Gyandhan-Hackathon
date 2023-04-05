@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from 'next/image'
 
 export default function ImageGallery () {
   return (
@@ -12,27 +13,36 @@ export default function ImageGallery () {
         </p>
         <div className="grid grid-cols-2 gap-2 mt-7 sm:px-16 lg:grid-cols-8 lg:grid-rows-2 lg:gap-3">
           <Link href="/blogs/all" className="col-span-2 lg:col-span-4 lg:row-span-2">
-            <img
+            <Image
               className="w-full bg-blue-50"
               src="https://picsum.photos/502"
+              width={100}
+              height={100}
+              
             />
           </Link>
           <Link href="/blogs/all" className="lg:col-span-2">
-            <img
+            <Image
               className="w-full bg-blue-50"
               src="https://picsum.photos/300"
+              width={100}
+              height={100}
             />
           </Link>
           <Link href="/blogs/all" className="lg:col-span-2">
-            <img
+            <Image
               className="w-full bg-blue-50"
               src="https://picsum.photos/303"
+              width={100}
+              height={100}
             />
           </Link>
           <Link href="/blogs/all" className="col-span-2 lg:block lg:col-span-4">
-            <img
+            <Image
               className="w-full bg-blue-50"
               src="https://picsum.photos/602/296"
+              width={100}
+              height={100}
             />
           </Link>
         </div>
