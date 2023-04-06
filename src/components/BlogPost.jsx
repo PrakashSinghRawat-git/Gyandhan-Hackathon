@@ -14,7 +14,9 @@ function BlogPost({ post, posts }) {
     const content = post.data[0].attributes.content;
     const slug = post.data[0].attributes.slug.toString();
 
-    const md = new MarkdownIt();
+    const md = new MarkdownIt({
+        html:true,
+    });
     const htmlContent = md.render(content);
 
 
