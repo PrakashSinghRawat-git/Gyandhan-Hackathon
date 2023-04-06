@@ -29,7 +29,7 @@ export default function Header() {
               </svg>
             </div>
           </span>
-          <span className="transition-all">Money ki baat</span>
+          <span className="transition-all">Gyandhan</span>
         </a>
         <nav className="hidden lg:flex gap-12">
           <a
@@ -42,26 +42,26 @@ export default function Header() {
             className="hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100 lg:text-base lg:font-normal"
             href="#"
           >
-            Features
+            Loans
           </a>
           <a
             className="hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100 lg:text-base lg:font-normal"
             href="#"
           >
-            Pricing
+            Calculate EMI
           </a>
           <a
             className="hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100 lg:text-base lg:font-normal"
             href="#"
           >
-            About
+            Calculate CIBIL Score
           </a>
         </nav>
         <a
           className="hidden bg-gray-200 hover:bg-gray-300 focus-visible:ring ring-indigo-300 text-gray-500 active:text-gray-700 text-sm font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3 md:text-base lg:inline-block lg:px-4 lg:py-2 lg:font-normal"
           href="#"
         >
-          Contact Sales
+          Contact Us
         </a>
         <Menu as="div" className="sticky top-0 " >
           <Menu.Button className=" w-full justify-center rounded-md px-4 py-2 text-sm font-medium dark:text-white hover:bg-opacity-30 "

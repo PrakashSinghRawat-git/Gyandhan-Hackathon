@@ -3,20 +3,23 @@ import Card2 from "@/components/cards/Card2";
 import Card3 from "@/components/cards/Card3";
 import Card4 from "@/components/cards/Card4";
 import ImageGallery from "@/components/cards/ImageGallery";
-import Image from 'next/image'
+import Image from "next/image";
+import { createClient } from "next-sanity";
+import axios from "axios";
+import EMICalculator from "@/components/utils/EmiCalculater";
 
-export default function Home() {
+export default function Home({ loans }) {
+    console.log(loans);
     return (
         <>
             <div className="py-10">
                 <div className="grid grid-cols-1 gap-3 p-4 mt-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:max-w-7xl xl:mx-auto">
                     <Card1 />
-                    <Card1 />
-                    <Card1 />
-                    <Card1 />
-                   
                 </div>
             </div>
+
+
+            <EMICalculator/>
 
             <section className="body-font py-20">
                 <div className="px-5 mx-auto max-w-7xl">
@@ -34,7 +37,6 @@ export default function Home() {
                         <Card2 />
                         <Card2 />
                         <Card2 />
-                     
                     </div>
                 </div>
             </section>
@@ -49,8 +51,6 @@ export default function Home() {
                     <Card3 />
                     <Card3 />
                     <Card3 />
-                
-                   
                 </div>
             </div>
 
@@ -64,9 +64,27 @@ export default function Home() {
                     <Card4 />
                     <Card4 />
                     <Card4 />
-                    
                 </div>
             </div>
         </>
     );
 }
+
+export async function getStaticProps() {
+    const loans = await axios.get(
+        "https://ixsnl66w.api.sanity.io/v2021-10-21/data/query/data?query=*%5B_type%20%3D%3D%20%22Loans%22%5D"
+    );
+
+    
+
+    return {
+        props: {
+            loans,
+        },
+    };
+}
+/* 
+const res = axios.get(
+    "https://ixsnl66w.api.sanity.io/v2021-10-21/data/query/data?query=*%5B_type%20%3D%3D%20%22Loans%22%5D"
+);
+console.log(res); */

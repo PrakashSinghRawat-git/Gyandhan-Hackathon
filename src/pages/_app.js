@@ -5,6 +5,7 @@ import Footer from "../components/utils/Footer";
 import  { AppProps } from "next/app";
 import { Menu } from "@headlessui/react";
 import Image from 'next/image'
+import EMICalculator from "@/components/utils/EmiCalculater";
 
 export default function App({ Component, pageProps }) {
   return (
@@ -36,6 +37,8 @@ export default function App({ Component, pageProps }) {
             </Menu.Item>
           </Menu.Items>
         </Menu>
+
+      
     </>
   );
 }
