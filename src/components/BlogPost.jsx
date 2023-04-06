@@ -36,16 +36,16 @@ function BlogPost({ post, posts }) {
 
 
 
-    const remainPost1 = `http://localhost:1337${authorImagePath}`;
-    const remainPost2 = `http://localhost:1337${authorImagePath}`;
-    const remainPost3 = `http://localhost:1337${authorImagePath}`;
-    const remainPost4 = `http://localhost:1337${authorImagePath}`;
-    const remainPost5 = `http://localhost:1337${authorImagePath}`;
-    const remainPost6 = `http://localhost:1337${authorImagePath}`;
-    const remainPost7 = `http://localhost:1337${authorImagePath}`;
-    const remainPost8 = `http://localhost:1337${authorImagePath}`;
-    const remainPost9 = `http://localhost:1337${authorImagePath}`;
-    const remainPost10 = `http://localhost:1337${authorImagePath}`;
+    const remainPost1 = `http://localhost:1337/uploads/pexels_monstera_6289100_d0637b4035.jpg`;
+    const remainPost2 = `http://localhost:1337/uploads/pexels_andrea_piacquadio_3760067_d25e44c886.jpg`;
+    const remainPost3 = `http://localhost:1337/uploads/pexels_karolina_grabowska_5632382_3aa9808a38.jpg`;
+    const remainPost4 = `http://localhost:1337/uploads/pexels_energepiccom_561458_32e31abc50.jpg`;
+    const remainPost5 = `http://localhost:1337/uploads/pexels_mikhail_nilov_7731323_7ea6ae9c65.jpg`;
+    const remainPost6 = `http://localhost:1337/uploads/pexels_kampus_production_6182096_6f36d710a3.jpg`;
+    const remainPost7 = `http://localhost:1337/uploads/pexels_jagmeet_singh_1134857_1_993aefe543.jpg`;
+    const remainPost8 = `http://localhost:1337/uploads/pexels_pixabay_47047_a1fc542d03.jpg`;
+    const remainPost9 = `http://localhost:1337/uploads/pexels_michael_steinberg_321452_6c2ae5a127.jpg`;
+    const remainPost10 = `http://localhost:1337/uploads/pexels_mister_fotofreak_6484708_fde32a08f3.jpg`;
 
 
     return (
@@ -58,7 +58,7 @@ function BlogPost({ post, posts }) {
                         {/* <!-- categories --> */}
                         <div class="w-full bg-white shadow-sm rounded-sm p-4 ">
                             <h3 class="text-xl font-semibold text-gray-700 mb-3 font-roboto">
-                                Categories
+                                Loans
                             </h3>
                             <div class="space-y-2">
                                 <a
@@ -68,7 +68,7 @@ function BlogPost({ post, posts }) {
                                     <span class="mr-2">
                                         <i class="far fa-folder-open"></i>
                                     </span>
-                                    <span>Beauti</span>
+                                    <span>Home</span>
                                     <p class="ml-auto font-normal">(12)</p>
                                 </a>
                                 <a
@@ -88,7 +88,7 @@ function BlogPost({ post, posts }) {
                                     <span class="mr-2">
                                         <i class="far fa-folder-open"></i>
                                     </span>
-                                    <span>Fashion</span>
+                                    <span>Auto</span>
                                     <p class="ml-auto font-normal">(5)</p>
                                 </a>
                                 <a
@@ -98,7 +98,7 @@ function BlogPost({ post, posts }) {
                                     <span class="mr-2">
                                         <i class="far fa-folder-open"></i>
                                     </span>
-                                    <span>Food</span>
+                                    <span>Personal</span>
                                     <p class="ml-auto font-normal">(10)</p>
                                 </a>
                                 <a
@@ -108,7 +108,7 @@ function BlogPost({ post, posts }) {
                                     <span class="mr-2">
                                         <i class="far fa-folder-open"></i>
                                     </span>
-                                    <span>Learn</span>
+                                    <span>Education</span>
                                     <p class="ml-auto font-normal">(3)</p>
                                 </a>
                                 <a
@@ -118,7 +118,7 @@ function BlogPost({ post, posts }) {
                                     <span class="mr-2">
                                         <i class="far fa-folder-open"></i>
                                     </span>
-                                    <span>Music</span>
+                                    <span>Gold</span>
                                     <p class="ml-auto font-normal">(7)</p>
                                 </a>
                                 <a
@@ -128,7 +128,7 @@ function BlogPost({ post, posts }) {
                                     <span class="mr-2">
                                         <i class="far fa-folder-open"></i>
                                     </span>
-                                    <span>Nature</span>
+                                    <span>Property</span>
                                     <p class="ml-auto font-normal">(0)</p>
                                 </a>
                                 <a
@@ -138,7 +138,7 @@ function BlogPost({ post, posts }) {
                                     <span class="mr-2">
                                         <i class="far fa-folder-open"></i>
                                     </span>
-                                    <span>People</span>
+                                    <span>Secured</span>
                                     <p class="ml-auto font-normal">(13)</p>
                                 </a>
                                 <a
@@ -148,7 +148,7 @@ function BlogPost({ post, posts }) {
                                     <span class="mr-2">
                                         <i class="far fa-folder-open"></i>
                                     </span>
-                                    <span>Sports</span>
+                                    <span>PayDay</span>
                                     <p class="ml-auto font-normal">(7)</p>
                                 </a>
                                 <a
@@ -158,7 +158,7 @@ function BlogPost({ post, posts }) {
                                     <span class="mr-2">
                                         <i class="far fa-folder-open"></i>
                                     </span>
-                                    <span>Technology</span>
+                                    <span>Agriculture</span>
                                     <p class="ml-auto font-normal">(17)</p>
                                 </a>
                             </div>
@@ -167,7 +167,7 @@ function BlogPost({ post, posts }) {
                         {/* <!-- random posts --> */}
                         <div class="w-full mt-8 bg-white shadow-sm rounded-sm p-4 ">
                             <h3 class="text-xl font-semibold text-gray-700 mb-3 font-roboto">
-                                Random Posts
+                                Latest Updates
                             </h3>
                             <div class="space-y-4">
                                 <a href="#" class="flex group">
@@ -179,13 +179,13 @@ function BlogPost({ post, posts }) {
                                     </div>
                                     <div class="flex-grow pl-3">
                                         <h5 class="text-md leading-5 block font-roboto font-semibold  transition group-hover:text-blue-500">
-                                            Team Bitbose geared up to attend Blockchain
+                                        India's Growth To Slow To 6.4% In 2023-24: Asian Development Bank
                                         </h5>
                                         <div class="flex text-gray-400 text-sm items-center">
                                             <span class="mr-1 text-xs">
                                                 <i class="far fa-clock"></i>
                                             </span>
-                                            June 11, 2021
+                                            April 5, 2023
                                         </div>
                                     </div>
                                 </a>
@@ -198,13 +198,13 @@ function BlogPost({ post, posts }) {
                                     </div>
                                     <div class="flex-grow pl-3">
                                         <h5 class="text-md leading-5 block font-roboto font-semibold  transition group-hover:text-blue-500">
-                                            After a Caribbean Hurricane, the Battle
+                                        World Bank Cuts India's Growth Forecast For 2023-24 To 6.3%
                                         </h5>
                                         <div class="flex text-gray-400 text-sm items-center">
                                             <span class="mr-1 text-xs">
                                                 <i class="far fa-clock"></i>
                                             </span>
-                                            March 27, 2021
+                                            April 4, 2023
                                         </div>
                                     </div>
                                 </a>
@@ -217,13 +217,13 @@ function BlogPost({ post, posts }) {
                                     </div>
                                     <div class="flex-grow pl-3">
                                         <h5 class="text-md leading-5 block font-roboto font-semibold  transition group-hover:text-blue-500">
-                                            California sheriff’s deputy shot during ‘ambush’
+                                        Centre May Consider Importing Butter, Ghee Amid Stagnant Milk Output
                                         </h5>
                                         <div class="flex text-gray-400 text-sm items-center">
                                             <span class="mr-1 text-xs">
                                                 <i class="far fa-clock"></i>
                                             </span>
-                                            Aprile 17, 2021
+                                            Aprile 5, 2023
                                         </div>
                                     </div>
                                 </a>
@@ -292,7 +292,7 @@ function BlogPost({ post, posts }) {
                                 <div class="mt-3">
                                     <a href="#">
                                         <h2 class="block text-xl font-semibold text-gray-700 hover:text-blue-500 transition font-roboto">
-                                            Lorem, ipsum dolor sit amet consec tetur adipisicing elit.
+                                           Get in touch with our Experts to get Financial Mentorship
                                         </h2>
                                     </a>
                                     <div class="mt-2 flex space-x-3">
@@ -300,13 +300,13 @@ function BlogPost({ post, posts }) {
                                             <span class="mr-2 text-xs">
                                                 <i class="far fa-user"></i>
                                             </span>
-                                            Blogging Tips
+                                            Feature Coming Soon
                                         </div>
                                         <div class="flex text-gray-400 text-sm items-center">
                                             <span class="mr-2 text-xs">
                                                 <i class="far fa-clock"></i>
                                             </span>
-                                            June 11, 2021
+                                            April 5, 2023
                                         </div>
                                     </div>
                                 </div>
@@ -321,7 +321,7 @@ function BlogPost({ post, posts }) {
                                 <div class="mt-3">
                                     <a href="#">
                                         <h2 class="block text-xl font-semibold text-gray-700 hover:text-blue-500 transition font-roboto">
-                                            Lorem, ipsum dolor sit amet consec tetur adipisicing elit.
+                                            Early Access to Premium Course on Finance 
                                         </h2>
                                     </a>
                                     <div class="mt-2 flex space-x-3">
@@ -329,13 +329,13 @@ function BlogPost({ post, posts }) {
                                             <span class="mr-2 text-xs">
                                                 <i class="far fa-user"></i>
                                             </span>
-                                            Blogging Tips
+                                            Coming Soon
                                         </div>
                                         <div class="flex text-gray-400 text-sm items-center">
                                             <span class="mr-2 text-xs">
                                                 <i class="far fa-clock"></i>
                                             </span>
-                                            June 11, 2021
+                                            April 5, 2023
                                         </div>
                                     </div>
                                 </div>
@@ -350,7 +350,7 @@ function BlogPost({ post, posts }) {
                                 <div class="mt-3">
                                     <a href="#">
                                         <h2 class="block text-xl font-semibold text-gray-700 hover:text-blue-500 transition font-roboto">
-                                            Lorem, ipsum dolor sit amet consec tetur adipisicing elit.
+                                           Join our Newsletter to get Latest updates about loan schemes and latest Finance News.
                                         </h2>
                                     </a>
                                     <div class="mt-2 flex space-x-3">
@@ -358,13 +358,13 @@ function BlogPost({ post, posts }) {
                                             <span class="mr-2 text-xs">
                                                 <i class="far fa-user"></i>
                                             </span>
-                                            Blogging Tips
+                                            Feature Coming Soon
                                         </div>
                                         <div class="flex text-gray-400 text-sm items-center">
                                             <span class="mr-2 text-xs">
                                                 <i class="far fa-clock"></i>
                                             </span>
-                                            June 11, 2021
+                                            April 5,2023
                                         </div>
                                     </div>
                                 </div>
@@ -379,7 +379,7 @@ function BlogPost({ post, posts }) {
                                 <div class="mt-3">
                                     <a href="#">
                                         <h2 class="block text-xl font-semibold text-gray-700 hover:text-blue-500 transition font-roboto">
-                                            Lorem, ipsum dolor sit amet consec tetur adipisicing elit.
+                                            Check out our latest AI-generated budgeting tool which gives you alerts and helpful tips on saving your salary.
                                         </h2>
                                     </a>
                                     <div class="mt-2 flex space-x-3">
@@ -387,13 +387,13 @@ function BlogPost({ post, posts }) {
                                             <span class="mr-2 text-xs">
                                                 <i class="far fa-user"></i>
                                             </span>
-                                            Blogging Tips
+                                            Feature Coming Soon
                                         </div>
                                         <div class="flex text-gray-400 text-sm items-center">
                                             <span class="mr-2 text-xs">
                                                 <i class="far fa-clock"></i>
                                             </span>
-                                            June 11, 2021
+                                            April 5,2023
                                         </div>
                                     </div>
                                 </div>
@@ -457,13 +457,14 @@ function BlogPost({ post, posts }) {
                                     </div>
                                     <div class="flex-grow pl-3">
                                         <h5 class="text-md leading-5 block font-roboto font-semibold  transition group-hover:text-blue-500">
-                                            Team Bitbose geared up to attend Blockchain
+                                        Nifty, Sensex Close Higher Aided By IT Stocks Ahead Of RBI Rate Decision
+
                                         </h5>
                                         <div class="flex text-gray-400 text-sm items-center">
                                             <span class="mr-1 text-xs">
                                                 <i class="far fa-clock"></i>
                                             </span>
-                                            June 11, 2021
+                                             April 6, 2023
                                         </div>
                                     </div>
                                 </a>
@@ -476,13 +477,14 @@ function BlogPost({ post, posts }) {
                                     </div>
                                     <div class="flex-grow pl-3">
                                         <h5 class="text-md leading-5 block font-roboto font-semibold  transition group-hover:text-blue-500">
-                                            After a Caribbean Hurricane, the Battle
+                                        India's Services Growth Slows In March, Input Cost Inflation Declines
+
                                         </h5>
                                         <div class="flex text-gray-400 text-sm items-center">
                                             <span class="mr-1 text-xs">
                                                 <i class="far fa-clock"></i>
                                             </span>
-                                            March 27, 2021
+                                            April 6, 2023
                                         </div>
                                     </div>
                                 </a>
@@ -495,13 +497,13 @@ function BlogPost({ post, posts }) {
                                     </div>
                                     <div class="flex-grow pl-3">
                                         <h5 class="text-md leading-5 block font-roboto font-semibold  transition group-hover:text-blue-500">
-                                            California sheriff’s deputy shot during ‘ambush’
+                                        PhonePe Launches E-Commerce App Pincode On Open Network
                                         </h5>
                                         <div class="flex text-gray-400 text-sm items-center">
                                             <span class="mr-1 text-xs">
                                                 <i class="far fa-clock"></i>
                                             </span>
-                                            Aprile 17, 2021
+                                            Aprile 5, 2023
                                         </div>
                                     </div>
                                 </a>
@@ -519,13 +521,13 @@ function BlogPost({ post, posts }) {
                                     href="#"
                                     class="px-3 py-1  text-sm border border-gray-200 rounded-sm transition hover:bg-blue-500 hover:text-white"
                                 >
-                                    Beauti
+                                    Home
                                 </a>
                                 <a
                                     href="#"
                                     class="px-3 py-1  text-sm border border-gray-200 rounded-sm transition hover:bg-blue-500 hover:text-white"
                                 >
-                                    Sports
+                                    Car
                                 </a>
                                 <a
                                     href="#"
@@ -537,31 +539,31 @@ function BlogPost({ post, posts }) {
                                     href="#"
                                     class="px-3 py-1  text-sm border border-gray-200 rounded-sm transition hover:bg-blue-500 hover:text-white"
                                 >
-                                    Politics
+                                    Personal
                                 </a>
                                 <a
                                     href="#"
                                     class="px-3 py-1  text-sm border border-gray-200 rounded-sm transition hover:bg-blue-500 hover:text-white"
                                 >
-                                    Computer
+                                    Finance
                                 </a>
                                 <a
                                     href="#"
                                     class="px-3 py-1  text-sm border border-gray-200 rounded-sm transition hover:bg-blue-500 hover:text-white"
                                 >
-                                    Coding
+                                    Gold
                                 </a>
                                 <a
                                     href="#"
                                     class="px-3 py-1  text-sm border border-gray-200 rounded-sm transition hover:bg-blue-500 hover:text-white"
                                 >
-                                    Web Design
+                                    Property
                                 </a>
                                 <a
                                     href="#"
                                     class="px-3 py-1  text-sm border border-gray-200 rounded-sm transition hover:bg-blue-500 hover:text-white"
                                 >
-                                    Web App
+                                    Secured
                                 </a>
                             </div>
                         </div>

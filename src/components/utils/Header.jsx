@@ -1,12 +1,13 @@
 import { Menu } from "@headlessui/react";
+import Link from "next/link";
 
 export default function Header() {
   return (
     <div className="py-8  ">
       <header className="container m-auto flex justify-between items-center ">
-        <a
+        <Link href="/"
           className="inline-flex items-center text-black-800 font-bold gap-2.5 text-xl md:text-2xl"
-          href="#"
+         
         >
           <span className="w-6 h-auto text-primary">
             <div
@@ -30,39 +31,34 @@ export default function Header() {
             </div>
           </span>
           <span className="transition-all">Gyandhan</span>
-        </a>
+        </Link >
         <nav className="hidden lg:flex gap-12">
-          <a
+          <Link href="/"
             className="text-lg font-semibold text-primary lg:font-medium lg:text-base"
-            href="#"
+           
           >
             Home
-          </a>
-          <a
+          </Link >
+          <Link href="/"
             className="hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100 lg:text-base lg:font-normal"
-            href="#"
+            
           >
             Loans
-          </a>
-          <a
+          </Link >
+          <Link href="/EmiCalc"
             className="hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100 lg:text-base lg:font-normal"
-            href="#"
+            
           >
             Calculate EMI
-          </a>
-          <a
-            className="hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100 lg:text-base lg:font-normal"
-            href="#"
-          >
-            Calculate CIBIL Score
-          </a>
+          </Link >
+          
         </nav>
-        <a
+        <Link href="/Contact"
           className="hidden bg-gray-200 hover:bg-gray-300 focus-visible:ring ring-indigo-300 text-gray-500 active:text-gray-700 text-sm font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3 md:text-base lg:inline-block lg:px-4 lg:py-2 lg:font-normal"
-          href="#"
+          
         >
-          Contact Us
-        </a>
+          Contact Experts
+        </Link >
         <Menu as="div" className="sticky top-0 " >
           <Menu.Button className=" w-full justify-center rounded-md px-4 py-2 text-sm font-medium dark:text-white hover:bg-opacity-30 "
           style={{display:'none'}}>

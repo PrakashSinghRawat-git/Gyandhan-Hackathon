@@ -8,6 +8,8 @@ import Card4 from "../components/cards/Card4";
 import Link from "next/link";
 import { fetchBlogT1s } from "../http/UrlAddress";
 import EMICalculator from "@/components/utils/EmiCalculater";
+import Contact from "./Contact";
+
 
 function Home({ posts }) {
   console.log(posts)
@@ -22,6 +24,8 @@ function Home({ posts }) {
       </div>
 
           <EMICalculator/>
+
+          <Contact/>
 
     </>
   );
