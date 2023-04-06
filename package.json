@@ -10,11 +10,7 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.7.13",
-<<<<<<< HEAD
     "axios": "^1.3.4",
-=======
-    "axios": "^1.3.5",
->>>>>>> bf9e0496eddc781e3feac1f745d3956b0afc73d9
     "eslint": "8.37.0",
     "eslint-config-next": "13.2.4",
     "markdown-it": "^13.0.1",
