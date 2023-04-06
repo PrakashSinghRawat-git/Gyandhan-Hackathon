@@ -25,7 +25,11 @@ function Home({ posts }) {
 
           <EMICalculator/>
 
+          <ImageGallery/>
+
           <Contact/>
+
+         
 
     </>
   );
