@@ -5,7 +5,7 @@ export default function Footer () {
         <a
           className="px-2 space-x-2 flex items-center gap-x-1 text-2xl font-bold text-primary"
           href="#">
-          Money ki baat
+          Gyandhan
           <span className="order-first">
             <div style={{fontSize:'inherit',color:'inherit',padding:'2px'}}>
               <svg
@@ -22,7 +22,7 @@ export default function Footer () {
           </span>
         </a>
         <a
-          className="flex items-center cursor-pointer hover:text-gray-200"
+          className="flex items-center cursor-pointer hover:text-gray-900"
           href="#">
           <span>Return to top</span>
           <span className="block w-4 h-4 align-middle ml-2">
@@ -41,10 +41,10 @@ export default function Footer () {
           </span>
         </a>
       </div>
-      <div className="pt-8 mx-auto max-w-screen-xl border-t-2 border-solid box-border space-y-8 dark:border-slate-700">
+      <div className="pt-8 mx-auto max-w-screen-xl border-t-2 border-solid box-border space-y-8 ">
         <div className="md:grid md:grid-cols-5">
-          <div className="py-1 dark:border-slate-700 md:border-r-2 md:pr-4 md:col-span-1">
-            <h5 className="m-0 text-lg font-semibold leading-none text-slate-900 dark:text-slate-100">
+          <div className="py-1  md:border-r-2 md:pr-4 md:col-span-1">
+            <h5 className="m-0 text-lg font-semibold leading-none text-slate-900 ">
               
               Policies
             </h5>
@@ -53,28 +53,28 @@ export default function Footer () {
             <ul className="flex flex-col p-0 space-y-2 sm:flex-row sm:space-x-10 sm:space-y-0">
               <li className="text-left">
                 <a
-                  className="text-base font-normal cursor-pointer hover:text-gray-800 dark:hover:text-gray-100"
+                  className="text-base font-normal cursor-pointer hover:text-gray-800 "
                   href="#">
                   Privacy Policy
                 </a>
               </li>
               <li className="text-left">
                 <a
-                  className="text-base font-normal cursor-pointer hover:text-gray-800 dark:hover:text-gray-100"
+                  className="text-base font-normal cursor-pointer hover:text-gray-800 "
                   href="#">
                   Terms and conditions
                 </a>
               </li>
               <li className="text-left">
                 <a
-                  className="text-base font-normal cursor-pointer hover:text-gray-800 dark:hover:text-gray-100"
+                  className="text-base font-normal cursor-pointer hover:text-gray-800 "
                   href="#">
                   Refund policy
                 </a>
               </li>
               <li className="text-left">
                 <a
-                  className="text-base font-normal cursor-pointer hover:text-gray-800 dark:hover:text-gray-100"
+                  className="text-base font-normal cursor-pointer hover:text-gray-800 "
                   href="#">
                   Return Policy
                 </a>
@@ -83,8 +83,8 @@ export default function Footer () {
           </nav>
         </div>
         <div className="md:grid md:grid-cols-5">
-          <div className="py-1 dark:border-slate-700 md:border-r-2 md:pr-4 md:col-span-1">
-            <h5 className="m-0 text-lg font-semibold leading-none text-slate-900 dark:text-slate-100">
+          <div className="py-1  md:border-r-2 md:pr-4 md:col-span-1">
+            <h5 className="m-0 text-lg font-semibold leading-none text-slate-900 ">
               Links
             </h5>
           </div>
@@ -92,38 +92,38 @@ export default function Footer () {
             <ul className="flex flex-col p-0 space-y-2 sm:flex-row sm:space-x-10 sm:space-y-0">
               <li className="text-left">
                 <a
-                  className="text-base font-normal cursor-pointer hover:text-gray-800 dark:hover:text-gray-100"
+                  className="text-base font-normal cursor-pointer hover:text-gray-800 "
                   href="#">
                   Care
                 </a>
               </li>
               <li className="text-left">
                 <a
-                  className="text-base font-normal cursor-pointer hover:text-gray-800 dark:hover:text-gray-100"
+                  className="text-base font-normal cursor-pointer hover:text-gray-800 "
                   href="#">
                   About Us
                 </a>
               </li>
               <li className="text-left">
                 <a
-                  className="text-base font-normal cursor-pointer hover:text-gray-800 dark:hover:text-gray-100"
+                  className="text-base font-normal cursor-pointer hover:text-gray-800 "
                   href="#">
                   Contact Us
                 </a>
               </li>
               <li className="text-left">
                 <a
-                  className="text-base font-normal cursor-pointer text-secondary hover:text-gray-800 dark:hover:text-gray-100"
+                  className="text-base font-normal cursor-pointer text-secondary hover:text-gray-800 "
                   href="#">
-                  support@moneykibaat.com
+                  support@gyandhan.com
                 </a>
               </li>
             </ul>
           </nav>
         </div>
         <div className="md:grid md:grid-cols-5">
-          <div className="py-1 dark:border-slate-700 md:border-r-2 md:pr-4 md:col-span-1">
-            <h5 className="m-0 text-lg font-semibold leading-none text-slate-900 dark:text-slate-100">
+          <div className="py-1 md:border-r-2 md:pr-4 md:col-span-1">
+            <h5 className="m-0 text-lg font-semibold leading-none text-slate-900 ">
               
               Social Media
             </h5>
@@ -132,7 +132,7 @@ export default function Footer () {
             <ul className="flex flex-col p-0 space-y-2 sm:flex-row sm:space-x-10 sm:space-y-0">
               <li className="text-left">
                 <a
-                  className="flex text-base font-normal cursor-pointer items-center gap-x-2 hover:text-gray-800 dark:hover:text-gray-100"
+                  className="flex text-base font-normal cursor-pointer items-center gap-x-2 hover:text-gray-800 "
                   href="#">
                   Twitter
                   <span>
@@ -153,7 +153,7 @@ export default function Footer () {
               </li>
               <li className="text-left">
                 <a
-                  className="flex text-base font-normal cursor-pointer items-center gap-x-2 hover:text-gray-800 dark:hover:text-gray-100"
+                  className="flex text-base font-normal cursor-pointer items-center gap-x-2 hover:text-gray-800 "
                   href="#">
                   Google
                   <span>
@@ -174,7 +174,7 @@ export default function Footer () {
               </li>
               <li className="text-left">
                 <a
-                  className="flex text-base font-normal cursor-pointer items-center gap-x-2 hover:text-gray-800 dark:hover:text-gray-100"
+                  className="flex text-base font-normal cursor-pointer items-center gap-x-2 hover:text-gray-800 "
                   href="#">
                   Instagram
                   <span>
@@ -197,10 +197,10 @@ export default function Footer () {
           </nav>
         </div>
       </div>
-      <div className="pt-8 mx-auto mt-8 max-w-screen-xl border-t-2 border-solid box-border dark:border-slate-700 lg:mt-12">
+      <div className="pt-8 mx-auto mt-8 max-w-screen-xl border-t-2 border-solid box-border  lg:mt-12">
         <p className="m-0 text-sm leading-5 text-center md:text-left">
           
-          ©2023 moneykibaat.com. All rights reserved
+          ©2023 gyandhan.com. All rights reserved
         </p>
       </div>
     </footer>
